@@ -1,0 +1,309 @@
+:root{
+    --backgorund-color:#df3940;
+    --secoend-color: #07395c;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+}
+
+header h1{
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+.nav-a{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.nav-a:hover{
+    color: #3f3d56;
+}
+.nav-btn{
+    padding: 7px 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    transition: all .6s ease;
+}
+.nav-btn:hover{
+    border: 2px solid var(--backgorund-color);
+    background-color: white;
+    color: var(--backgorund-color);
+}
+/* end of nav bar  */
+
+.slider{
+   height: 90vh;
+   width: 100%;
+}
+.hero{
+    content: "";
+    background-color: var(--backgorund-color);
+    width: 100%;
+    height: 108vh;
+    position: absolute;
+    top: 0;
+    z-index: -7777;
+}
+.slider-text {   
+    z-index: 45;
+    position: absolute;
+    top: 40%;
+}
+.slider-text h2{
+    margin-top: 1.4em;
+    font-size: 4.4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    line-height: 1.12;
+    font-weight: 800;
+}
+.slider-btn{
+    padding: 5px 90px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    transition: all .6s ease;
+}
+.slider-btn:hover{
+    border: 2px solid var(--backgorund-color);
+    background-color: white;
+    color: var(--backgorund-color);
+}
+.slider-img{
+    width: 60%;
+    height: 85vh;
+    position: absolute;
+    right: 0;
+    
+}
+.slider-img img{
+    width: 100%;
+    height: 85vh;
+    
+}
+   
+/* about section  */
+
+
+.about{
+    height: 100vh;
+    width: 100%;
+    color: var(--secoend-color);
+    font-weight: 500;
+    
+}
+.section-title h2{
+   color: var(--backgorund-color);
+   font-size: 2.5rem;
+   font-weight: 600;
+   position: relative;
+  
+}
+.section-title h2::after{
+   content: "";
+   position: absolute;
+   width: 7%;
+   height: 5px;
+   background-color: var(--secoend-color);
+   border-radius: 24%;
+   top: 102%;
+   left: 1%;
+   margin-bottom: .5em;
+}
+.section-title p{
+  font-weight: 500;
+  padding: 2em 0em;
+   
+ }
+ .about-description h3{
+     color: var(--backgorund-color);
+     font-weight: 600;
+ }
+ .about-description strong{
+     color: var(--backgorund-color);
+     font-weight: 600;
+ }
+
+  /* skill section  */
+ .skill{
+     background-color: var(--secoend-color);
+     height: 95vh;
+     width: 100%;
+     
+ }
+ .skill-title h2{
+     font-size: 3rem;
+     font-weight: 900;
+     color:var(--backgorund-color);
+     padding: .9em 0em .5em;
+ }
+ .skill-title p{
+    font-weight: 500;
+     color:#fff;
+
+ }
+ .progress-container{
+     display: flex;
+ }
+ .progress-container h4{
+     color: #fff;
+     font-weight: 500;
+     font-size: 1rem;
+ }
+ .progress-bg{
+     background-color: var(--backgorund-color);
+ }
+ .progress-precentage{
+     float: right;
+ }
+
+
+
+
+ /* contact section  */
+.contact{
+    height: 100vh;
+    width: 100%;
+}
+/* .contact-info{
+    width: 100%;
+} */
+.contact-info h4{
+    font-weight: 600;
+    color: var(--backgorund-color);
+}
+.contact-info ul{
+   list-style: none;
+}
+.contact-map{
+   width: 90%;
+   height: 100px;
+}
+.contact-message-text h2{
+    color: var(--backgorund-color);
+    font-weight: 700;
+}
+#contact-btn{
+    border: 2px solid var(--backgorund-color);
+    
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    background: white;
+    transition: all .7s ease;
+}
+#contact-btn:hover{
+    background: var(--backgorund-color);
+    color: white;
+}
+
+/* services section  */
+.services{
+    height: 100vh ;
+    width: 100%;
+    background: var(--secoend-color);
+}
+.card-style{
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0px 0px 6px 3px black;
+   /* filter: blur(4px); */
+   
+}
+.service-top-p{
+    color: white;
+    font-weight: 600;
+}
+.card-blur{
+  
+}
+.card-style h5{
+    z-index: 2999;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.card-style p{
+    z-index: 2999;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.card-style p{
+    z-index: 2;
+    color: white;
+}
+
+.service-img{
+   height: 150px;
+   width: 150px;
+} 
+
+
+
+/* hire me   */
+.hireMe{
+    height: 30vh;
+    width: 100%;
+    background-color: var(--backgorund-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hireMe button{
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: var(--backgorund-color);
+}
+.hireMe button:hover{
+    border: 2px solid var(--backgorund-color);
+    background-color: white;
+}
+
+
+/* footer sectio   */
+
+footer{
+    height: 60px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secoend-color);
+    font-weight: 800;
+    color: white;
+    width: 100%;
+}
+
+
+/* 
+#team{
+    height: 100vh;
+    width: 100%;
+   
+}
+.team-container{
+    display: grid;
+    justify-items: center;
+}
+.member-info{
+    text-align: center;
+    box-shadow: 0px 0px 4px 2px black;
+    z-index: 77;
+    width: 80%;
+    
+} */
+
+
+
+ 
